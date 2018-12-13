@@ -1,29 +1,90 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Page2</title>
+
+    <title>HTML controls</title>
+
 </head>
 <body>
-    <div id="header">
-        <h1>Page 2</h1>
+    <table border="1">
+        <thead></thead>
+        <tbody>
+            <h2>Articles</h2>
+            <article>
+                <section><i>section</i></section>
+                <section>
+                    <p>
+                        section2  <b><u>withboldtext</u></b>
+                        <br>
+                    </p>
+                </section>
 
-        <div>
-            External image
-            <img src="data:image/png;base64,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" alt="hacker"
-        </div>
-        
-        
-        <div>
-            Internal image
-            <img src="local.png" alt="Image not found">
-        </div>
-        
-       
-       
-        <div>       Internal image
-        <img src="doesnotexist.png" alt="Image not found">
-        </div>
- 
-    </div>
+            </article>
+            <h2>Table</h2>
+            <!--this is row1-->
+
+            <tr><td><div>row1 column1😃⚡</div></td>
+                <td>row1 column2😃</td>
+                <td>row1 column3😃</td>
+            </tr>
+
+            <!--this is row 2-->
+            <tr><td>row2 column1 😃</td>
+                <td>row2 column2 😃</td>
+                <td>row2 column3 😃</td>
+            </tr>
+
+        </tbody>
+
+
+    </table>
+<caption>This is a caption</caption>
+
+    <h2>List</h2>
+    <ul> <li>Number 1</li>
+        <li>Number 2</li>
+    </ul>
+   
+<ol>
+        <li>Number 1</li>
+        <li>Number 2</li>
+</ol>
+    <h2>Controls</h2>
+<div>
+        <button value="button">Click me</button>
+
+
+        <select>
+            <option>Option1</option>
+            <option>Option2</option>
+        </select>
+</div>
+
+<label title="email"></label>
+<input type="email" placeholder="glohermon@gmail.com">
+<input type="date">
+<input type="password" value='123'>
+<br>
+
+<input type="radio" name="animals" value="dogs">dogs<input>
+<input type="radio" name="animals" value="cats">cats<input>
+
+
+<label>
+    Other:</label>
+    <input type="text">
+</label>
+
+<br>
+<input type="checkbox">apples<input>
+<input type="checkbox">grapes<input>
+
+
+
+<footer>
+    Footer
+    <hr/>
+
+</footer>
 </body>
 </html>
