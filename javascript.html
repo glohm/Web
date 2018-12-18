@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Java Script</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-----<script src="main.js"></script>-->
+</head>
+<body>
+    
+    <script type="text/javascript">
+        //Say  Hello
+        alert("Hey there!");
+        document.write("I said, hey!, <h2>Again</h2>");
+
+        document.writeln("This is dynamic <br/>");
+
+        document.writeln(new Date());
+
+        //Console logs
+        console.log('This is hidden');
+        console.debug("Debug message");
+        console.error("Error message");
+        console.info("Just information")
+
+        try 
+        {
+            //everything is fine
+            throw "This is unexpected"
+        }
+        catch
+        {
+            //But if it fails
+            console.error(ex)
+        }
+
+        function sayHello () {
+            alert('You hit!');
+        }
+
+        function asksomething(){
+            var input=prompt("Say something");
+
+            console.log(input)
+
+            //Create an H3 then give it a text
+            
+            var text = document.createElement("h3");
+            text.innerText = input;
+
+            document.getElementById("dynamicSection").appendChild(text)
+        }
+    </script>
+
+    <section id="dynamicSection">
+            <button id='askbutton'onclick='asksomething()'> Ask something  </button>
+            <button id="hit button" onclick="sayHello()"> Hit me</button>
+    </section>
+ 
+
+</body>
+</html>
